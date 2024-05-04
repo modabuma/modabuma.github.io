@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">emebé</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>MOISÉS BUENO</h1>
+            <h2>Analista y Desarrollador de Software</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/modabuma"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/573016959775"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p><span>Hola, soy Moisés Bueno, </span> 
+                como estudiante de Análisis y Desarrollo de Software y NOC Agent en GBM, mi enfoque principal es supervisar y monitorear el rendimiento de sistemas y procesos para garantizar su eficiencia. Además de mi experiencia en el monitoreo de equipos y la gestión de servicios, cuento con conocimientos sólidos en el análisis y desarrollo de software.
+                <br><br>Antes de unirme a GBM, trabajé en E-Soluciones TIC como Analista de Soporte nivel II, donde atendía, seguía y cerraba tickets de soporte técnico, escalando problemas cuando era necesario y gestionando inventarios tecnológicos y oportunidades de mejora de infraestructuras tecnológicas.
+                <br><br>Anteriormente, en Audifarma S.A., trabajé como Técnico de Soporte, encargándome del mantenimiento de equipos de cómputo, gestión de inventarios y realización de instalaciones de sistemas operativos.
+                <br><br>Mi experiencia en monitoreo, soporte técnico, mantenimiento de equipos y atención al cliente me ha dotado de habilidades en resolución de problemas, gestión de recursos y trabajo en equipo. Estoy comprometido con seguir creciendo profesionalmente y contribuir al éxito de las organizaciones mediante mi experiencia en tecnología y servicio al cliente.
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            23/02/2000
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +57 301 695 9775
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            buenomoises2302@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            en construcción
+                        </li>
+
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-network-wired"></i>
+                            <span>REDES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>MOTOS</span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <a href="hdv/UltimaHDV.pdf" download="Hoja de Vida Emebé">
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Técnico en Sistemas</h4>
+                        <span class="casa">Servicio Nacional de Aprendizaje</span>
+                        <span class="fecha">2017 - 2018</span>
+                        <p>          
+                        El programa de Técnico en Sistemas del SENA en Colombia me brindó una sólida formación en áreas como programación, redes, 
+                        bases de datos y soporte técnico, preparándome para roles técnicos en el campo de la tecnología.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería de Sistemas</h4>
+                        <span class="casa">Corporación Universitaria Americana</span>
+                        <span class="fecha">2017 - 2020 (No culminada)</span>
+                        <p>
+                        El programa de Ingeniería de Sistemas de la Corporación Universitaria Americana de Barranquilla me brindó una sólida formación en tecnología, 
+                        cubriendo áreas clave como programación, redes, bases de datos y desarrollo de software. Me preparó para asumir roles de liderazgo en el campo de la ingeniería de sistemas.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Analisís y Desarrollo de Software</h4>
+                        <span class="casa">Servicio Nacional de Aprendizaje</span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p>
+                        En el programa de Análisis y Desarrollo de Software del SENA, estoy adquiriendo habilidades fundamentales en diseño, programación y gestión de proyectos de software. 
+                        Aprendo a desarrollar aplicaciones web, así como a implementar metodologías ágiles. <br>
+                        Este programa me prepara para enfrentar los desafíos del desarrollo de software en la industria actual.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Técnico en Sistemas</h4>
+                        <span class="casa">Temporales TLA S.A.S. </span>
+                        <span class="fecha">Empresa en misión: Petromag S.A.S. 2020 - 2022</span>
+                        <p>
+                        Como profesional en tecnologías de la información para la empresa Petromag S.A.S., tengo experiencia en el mantenimiento lógico y físico de servidores, así como en el manejo de servidores telefónicos. Además, cuento con habilidades en el mantenimiento preventivo, correctivo y predictivo de equipos de cómputo, y en la administración de correos electrónicos empresariales y redes. También poseo experiencia en la instalación y tendido de puntos de red, mantenimiento de impresoras y dispositivos de la empresa, así como en la copia de seguridad diaria de suites contables como SIIGO.    
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analista de Soporte - Nivel II </h4>
+                        <span class="casa">E-Soluciones TIC S.A.S.</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>
+                        El resumén  incluye la atención y seguimiento de tickets de soporte técnico, la gestión del inventario tecnológico del cliente, la identificación y gestión de oportunidades de mejora en la infraestructura tecnológica, la planificación y priorización de actividades, el aprovisionamiento y configuración de equipos, la ejecución de actividades de mantenimiento preventivo y formateo de equipos, y la gestión del mantenimiento correctivo de estaciones de trabajo, impresoras, escáneres, teléfonos, entre otros dispositivos.    
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Agent NOC</h4>
+                        <span class="casa">GBM Colombia S.A.S.</span>
+                        <span class="fecha">2023 - Actualidad</span>
+                        <p>
+                        Mis principales funciones son supervisar el rendimiento de servicios y procesos, identificar y gestionar fallos, mantener registros de eventos y generar informes para respaldar decisiones. Responder a alertas y realizar mantenimiento preventivo. Asegurar la actualización de software, colaborar con equipos de soporte, optimizar recursos y garantizar el cumplimiento de acuerdos de nivel de servicio.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Barrio Universal 2da Etapa
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamamé: +57 301 695 9775
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: buenomoises2302@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/modabuma"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/573016959775"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
