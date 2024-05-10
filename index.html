@@ -298,15 +298,28 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <form action="https://formsubmit.co/buenomoises2302@gmail.com" method="POST">
+                    <label for="Tú Nombre"></label>
+                    <input type="text" name="name" placeholder="Tú Nombre" required>
+
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="Correo Electrónico" required>
+
+                    <label for="subject"></label>
+                    <input type="text" name="subject" placeholder="Asunto" required>
+
+                    <label for="comments"></label required>
+                    <textarea name="comments" cols="30" rows="10" placeholder="Mensaje"></textarea>
+
                     <button>
                         Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
+                 
+                    <input type="hidden" name="_next" value="https://modabuma.github.io/">
+                    <input type="hidden" name="_captcha" value="false">
+
+                </form>
                 </div>
                 <!-- Mapa -->
                 <div class="col">
